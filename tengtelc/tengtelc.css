@@ -1,0 +1,21 @@
+@font-face{
+    font-family: 'Tengwar Telcontar';
+    src: url('tengtelc.eot');
+    src: local('Tengwar Telcontar'),
+         url('tengtelc.woff') format('woff'),
+	     url('tengtelc.eot') format('embedded-opentype'),
+	     url('tengtelc.ttf') format('truetype');
+	font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Tengwar Telcontar';
+    src: url('tengtelcb.eot');
+    src: local('Tengwar Telcontar Bold'),
+         url('tengtelcb.woff') format('woff'),
+	     url('tengtelcb.eot') format('embedded-opentype'),
+	     url('tengtelcb.ttf') format('truetype');
+	font-weight: normal;
+    font-style: bold;
+}

@@ -8,20 +8,15 @@
 
 		<link href="fira/fira.css" rel="stylesheet" type="text/css">
 		<link href="main.css" rel="stylesheet" type="text/css">
+
+		<script type="text/javascript" src="main.js"></script>
 		
-		<!-- randomise background colour -->
+		<!-- fallback styling -->
 		<noscript>
 			<style type="text/css">
 				body { background-color: #3d9d9a; }
 			</style>
 		</noscript>
-		<script>
-			window.addEventListener('load',function(){
-				var hue = Math.floor(Math.random()*360);
-				document.body.style.backgroundColor = 
-					"hsl(" + hue.toString(10) + ", 44%, 43%)";
-			},false);
-		</script>
 	</head>
 
 	<body>

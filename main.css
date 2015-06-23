@@ -1,8 +1,9 @@
 body {
 	background: #2f7782;
 	background-image: url(diamond.svg);
-	background-size: 50pt 50pt;
+	background-attachment: fixed;
 	background-position: center;
+	background-size: 50pt 50pt;
 }
 
 a {

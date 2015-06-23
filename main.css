@@ -1,0 +1,44 @@
+body {
+	background: #348591;
+}
+
+a {
+	color: #ecf1f1;
+	font-family: 'Fira Mono', monospace;
+	text-decoration: none;
+}
+
+a:hover {
+	text-shadow: 0pt 0pt 1pt rgba(256, 256, 256, 0.5);
+}
+
+.container {
+	-moz-border-radius:10pt;
+	-webkit-border-radius:10pt;
+	background: rgba(256, 256, 256, 0.4);
+	border:0pt;
+	border-radius:11pt;
+	box-shadow: 0pt 3pt 6pt rgba(0, 0, 0, 0.5);
+	color: #2e3c47;
+	font-family: 'Fira Sans', sans-serif;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5pt;
+	margin-bottom: 5pt;
+	max-width: 400pt;
+	padding-left: 2%;
+	padding-right: 2%;
+	text-align: center;
+}
+
+.container:hover {
+	background: rgba(256, 256, 256, 0.5);
+}
+
+.title {
+	font-size: 18pt;
+}
+
+.block {
+	font-size: 12pt;
+}

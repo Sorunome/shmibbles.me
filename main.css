@@ -9,22 +9,20 @@ a {
 }
 
 a:hover {
-	text-shadow: 0pt 0pt 1pt rgba(256, 256, 256, 0.5);
+	text-shadow: 0pt 0pt 1pt rgba(256, 256, 256, 0.7);
 }
 
 .container {
-	-moz-border-radius:10pt;
-	-webkit-border-radius:10pt;
 	background: rgba(256, 256, 256, 0.4);
 	border:0pt;
-	border-radius:11pt;
+	-moz-border-radius:10pt;
+	-webkit-border-radius:10pt;
+	border-radius:10pt;
 	box-shadow: 0pt 3pt 6pt rgba(0, 0, 0, 0.5);
 	color: #2e3c47;
 	font-family: 'Fira Sans', sans-serif;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 5pt;
-	margin-bottom: 5pt;
 	max-width: 400pt;
 	padding-left: 2%;
 	padding-right: 2%;
@@ -33,6 +31,9 @@ a:hover {
 
 .container:hover {
 	background: rgba(256, 256, 256, 0.5);
+	-moz-transform: translate(0pt,-1pt);
+	-webkit-transform: translate(0pt,-1pt);
+	transform: translate(0pt,-1pt);
 }
 
 .title {

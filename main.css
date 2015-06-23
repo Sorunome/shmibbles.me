@@ -1,5 +1,4 @@
 body {
-	background: #2f7782;
 	background-image: url(diamond.svg);
 	background-attachment: fixed;
 	background-position: center;
@@ -17,7 +16,7 @@ a:hover {
 }
 
 .container {
-	background: rgba(256, 256, 256, 0.4);
+	background-color: rgba(256, 256, 256, 0.4);
 	border:0pt;
 	-moz-border-radius:10pt;
 	-webkit-border-radius:10pt;
@@ -34,7 +33,7 @@ a:hover {
 }
 
 .container:hover {
-	background: rgba(256, 256, 256, 0.5);
+	background-color: rgba(256, 256, 256, 0.5);
 	-moz-transform: translate(0pt,-1pt);
 	-webkit-transform: translate(0pt,-1pt);
 	transform: translate(0pt,-1pt);

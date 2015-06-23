@@ -9,12 +9,17 @@
 		<link href="fira/fira.css" rel="stylesheet" type="text/css">
 		<link href="main.css" rel="stylesheet" type="text/css">
 		
-		<!-- randomise background -->
+		<!-- randomise background colour -->
+		<noscript>
+			<style type="text/css">
+				body { background-color: #3d9d9a; }
+			</style>
+		</noscript>
 		<script>
 			window.addEventListener('load',function(){
-				var clist = ["#9c3d3d", "#2f7782", "#703d9c", "#9c3d87"];
-				var index = Math.floor(Math.random()*clist.length);
-				document.body.style.backgroundColor = clist[index];
+				var hue = Math.floor(Math.random()*360);
+				document.body.style.backgroundColor = 
+					"hsl(" + hue.toString(10) + ", 44%, 43%)";
 			},false);
 		</script>
 	</head>

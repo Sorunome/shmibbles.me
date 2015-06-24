@@ -9,6 +9,7 @@ a {
 	color: #ecf1f1;
 	font-family: 'Fira Mono', monospace;
 	text-decoration: none;
+	text-shadow: 0pt 0pt 3pt rgba(28, 46, 60, 0.7);
 }
 
 a:hover {
@@ -33,7 +34,7 @@ a:hover {
 }
 
 .container:hover {
-	background-color: rgba(256, 256, 256, 0.5);
+	box-shadow: 0pt 4pt 7pt rgba(0, 0, 0, 0.6);
 	-moz-transform: translate(0pt,-1pt);
 	-webkit-transform: translate(0pt,-1pt);
 	transform: translate(0pt,-1pt);

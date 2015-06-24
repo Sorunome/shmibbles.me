@@ -1,7 +1,7 @@
 <?php
 if(array_key_exists('p', $_GET)) {
 	if(!is_numeric($_GET['p'])) {
-		header('Location: http://shmibbles.me/blog');
+		header('Location: .');
 	}
 	$page = $_GET['p'];
 }
@@ -11,7 +11,7 @@ if(array_key_exists('p', $_GET)) {
 	<head>
 		<meta charset="utf-8">
 		<title>shmibbles.me</title>
-		<link rel="icon" type="image/png" href="http://shmibbles.me/harma.png">
+		<link rel="icon" type="image/png" href="/harma.png">
 
 		<link href="../fira/fira.css" rel="stylesheet" type="text/css">
 		<link href="../tengtelc/tengtelc.css" rel="stylesheet" type="text/css">
@@ -81,7 +81,7 @@ if( array_key_exists($page, $entries) ) {
 				<div id="blog-body">
 <?php
 	foreach($entries as $key => $value) {
-		echo '<p><a href="http://shmibbles.me/blog/?p=' . $key . '">';
+		echo '<p><a href="?p=' . $key . '">';
 		echo $value;
 		echo '</a></p>';
 	}
@@ -94,16 +94,16 @@ if( array_key_exists($page, $entries) ) {
 
 <?php
 	/* first */
-	echo '<a id="first" href=';
-	echo 'http://shmibbles.me/blog/?p=' . key(array_slice($entries, -1, 1, TRUE));
-	echo '>&lt;&lt; first</a>';
+	echo '<a id="first" href="';
+	echo '?p=' . key(array_slice($entries, -1, 1, TRUE));
+	echo '">&lt;&lt; first</a>';
 ?>
 
 <?php
 	/* prev */
 	if( $page and array_key_exists($page - 1, $entries) ) {
-		echo '<a id="prev" href=';
-		echo '"http://shmibbles.me/blog/?p=' . ($page - 1) . '">';
+		echo '<a id="prev" href="';
+		echo '?p=' . ($page - 1) . '">';
 		echo '&lt; prev</a>';
 	} else {
 		echo '<div id="prev">&lt; prev</div>';
@@ -113,7 +113,7 @@ if( array_key_exists($page, $entries) ) {
 <?php
 	/* index */
 	if( $page and array_key_exists($page, $entries) ) {
-		echo '<a id="index" href="http://shmibbles.me/blog">';
+		echo '<a id="index" href=".">';
 		echo 'index';
 		echo '</a>';
 	} else {
@@ -125,7 +125,7 @@ if( array_key_exists($page, $entries) ) {
 	/* next */
 	if( $page and array_key_exists($page + 1, $entries) ) {
 		echo '<a id="prev" href=';
-		echo '"http://shmibbles.me/blog/?p=' . ($page + 1) . '">';
+		echo '"?p=' . ($page + 1) . '">';
 		echo 'next &gt;</a>';
 	} else {
 		echo '<div id="next">next &gt;</div>';
@@ -134,9 +134,9 @@ if( array_key_exists($page, $entries) ) {
 
 <?php
 	/* last */
-	echo '<a id="last" href=';
-	echo 'http://shmibbles.me/blog/?p=' . key(array_slice($entries, -1, 1, TRUE));
-	echo '>last &gt;&gt;</a>';
+	echo '<a id="last" href="';
+	echo '?p=' . key(array_slice($entries, -1, 1, TRUE));
+	echo '">last &gt;&gt;</a>';
 ?>
 				</div>
 			</div>

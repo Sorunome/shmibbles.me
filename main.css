@@ -6,14 +6,14 @@ body {
 }
 
 a {
-	color: #ecf1f1;
+	color: rgb(236, 241, 241);
 	font-family: 'Fira Mono', monospace;
 	text-decoration: none;
 	text-shadow: 0pt 0pt 3pt rgba(28, 46, 60, 0.7);
 }
 
 a:hover {
-	text-shadow: 0pt 0pt 1pt rgba(256, 256, 256, 0.7);
+	text-shadow: 0pt 0pt 1pt rgba(236, 241, 241, 0.7);
 }
 
 .container {
@@ -23,7 +23,7 @@ a:hover {
 	-webkit-border-radius:10pt;
 	border-radius:10pt;
 	box-shadow: 0pt 3pt 6pt rgba(0, 0, 0, 0.5);
-	color: #2e3c47;
+	color: rgb(46, 60, 71);
 	font-family: 'Fira Sans', sans-serif;
 	margin-left: auto;
 	margin-right: auto;
@@ -31,13 +31,6 @@ a:hover {
 	padding-left: 2%;
 	padding-right: 2%;
 	text-align: center;
-}
-
-.container:hover {
-	box-shadow: 0pt 4pt 7pt rgba(0, 0, 0, 0.6);
-	-moz-transform: translate(0pt,-1pt);
-	-webkit-transform: translate(0pt,-1pt);
-	transform: translate(0pt,-1pt);
 }
 
 .title {

@@ -10,14 +10,12 @@
 		<link href="tengtelc/tengtelc.css" rel="stylesheet" type="text/css">
 		<link href="main.css" rel="stylesheet" type="text/css">
 
-		<script type="text/javascript" src="main.js"></script>
-		
-		<!-- fallback styling -->
-		<noscript>
-			<style type="text/css">
-				body { background-color: #3d9d9a; }
-			</style>
-		</noscript>
+		<!-- randomise background colour -->
+		<style type="text/css">
+			body {
+				background-color: hsl( <?php echo rand(0,359);?> , 44%, 43%);
+			}
+		</style>
 	</head>
 
 	<body>
@@ -29,7 +27,7 @@
 					
 					<p>
 						<font face="Tengwar Telcontar">
-							 | 
+						|
 						</font>
 					</p>
 				</div>

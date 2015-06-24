@@ -16,6 +16,24 @@ a:hover {
 	text-shadow: 0pt 0pt 1pt rgba(236, 241, 241, 0.7);
 }
 
+a#next {
+	text-align: right;
+}
+
+a#prev {
+	text-align: left;
+}
+
+div#blog-body {
+	text-align: left;
+}
+
+div#nav {
+	display: flex;
+	justify-content: space-between;
+	font-family: 'Fira Mono', monospace;
+	text-decoration: none;
+}
 .container {
 	background-color: rgba(256, 256, 256, 0.4);
 	border:0pt;
